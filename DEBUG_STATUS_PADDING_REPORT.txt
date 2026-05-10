@@ -1,0 +1,33 @@
+Added import: import androidx.compose.foundation.layout.widthIn
+Added import: import androidx.compose.ui.text.style.TextOverflow
+Replaced SummaryTile with single-line/min-width version
+Adjusted summary tile row spacing 8dp -> 6dp where present
+
+FILES:
+DEBUG_REPORT.txt
+DIRECTORY_TREE.txt
+app/build.gradle.kts
+app/proguard-rules.pro
+app/src/main/AndroidManifest.xml
+app/src/main/java/com/calltheitguy/monitor/MainActivity.kt
+app/src/main/java/com/calltheitguy/monitor/data/MonitorDatabase.kt
+app/src/main/java/com/calltheitguy/monitor/data/ServerDao.kt
+app/src/main/java/com/calltheitguy/monitor/data/ServerEntity.kt
+app/src/main/java/com/calltheitguy/monitor/data/ServerRepository.kt
+app/src/main/java/com/calltheitguy/monitor/engine/NetworkEngine.kt
+app/src/main/java/com/calltheitguy/monitor/service/MonitorWorker.kt
+app/src/main/java/com/calltheitguy/monitor/service/NotificationHelper.kt
+app/src/main/java/com/calltheitguy/monitor/ui/AddServerDialog.kt
+app/src/main/java/com/calltheitguy/monitor/ui/MonitorDashboard.kt
+app/src/main/java/com/calltheitguy/monitor/ui/ServerItem.kt
+app/src/main/java/com/calltheitguy/monitor/viewmodel/MonitorViewModel.kt
+app/src/main/res/drawable/ic_launcher_foreground.xml
+app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+app/src/main/res/values/colors.xml
+app/src/main/res/values/themes.xml
+app/src/main/res/xml/backup_rules.xml
+app/src/main/res/xml/data_extraction_rules.xml
+build.gradle.kts
+gradle.properties
+settings.gradle.kts
