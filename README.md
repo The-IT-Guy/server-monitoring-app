@@ -4,7 +4,9 @@ An Android app for monitoring servers and network endpoints from your phone. Add
 
 No accounts. No cloud. No backend. Runs entirely on-device using WorkManager and a local Room database.
 
-Download the latest debug APK: [`server-monitor.apk`](./server-monitor.apk)
+Download the latest debug APK directly on your device:
+
+[`server-monitor.apk`](https://github.com/The-IT-Guy/server-monitoring-app/raw/main/server-monitor.apk)
 
 ---
 
@@ -29,17 +31,24 @@ Download the latest debug APK: [`server-monitor.apk`](./server-monitor.apk)
 
 ## Download
 
-The repository includes a prebuilt debug APK at:
+The repository includes a prebuilt debug APK for easy device installation.
 
-[`server-monitor.apk`](./server-monitor.apk)
+Direct download:
+
+[`server-monitor.apk`](https://github.com/The-IT-Guy/server-monitoring-app/raw/main/server-monitor.apk)
+
+Phone install:
+
+1. Open this link on the Android device: `https://github.com/The-IT-Guy/server-monitoring-app/raw/main/server-monitor.apk`
+2. Download the APK.
+3. Open the downloaded file.
+4. Allow installation from the browser or file manager if Android prompts.
 
 To install with Android Debug Bridge:
 
 ```bash
 adb install server-monitor.apk
 ```
-
-For phone-only install, download the APK from GitHub, open it on the device, and allow installation from the browser or file manager when Android prompts.
 
 ---
 
