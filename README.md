@@ -4,6 +4,8 @@ An Android app for monitoring servers and network endpoints from your phone. Add
 
 No accounts. No cloud. No backend. Runs entirely on-device using WorkManager and a local Room database.
 
+Download the latest debug APK: [`server-monitor.apk`](./server-monitor.apk)
+
 ---
 
 ## Features
@@ -18,8 +20,26 @@ No accounts. No cloud. No backend. Runs entirely on-device using WorkManager and
 - **Push notifications** for outages, recoveries, and SSL certificates expiring within 14 days
 - **Fleet dashboard** — at-a-glance summary of total / up / down / pending / disabled server counts
 - **Per-server status cards** showing latency, port numbers, SSL days remaining, last checked timestamp
+- **Offline-first ordering** — checked, enabled servers that go offline automatically move to the top of the list
+- **Saved normal ordering** — recovered servers return to their saved list position when they come back online
 - **Enable/disable servers** without deleting them
 - **Dark theme** with navy/blue UI throughout
+
+---
+
+## Download
+
+The repository includes a prebuilt debug APK at:
+
+[`server-monitor.apk`](./server-monitor.apk)
+
+To install with Android Debug Bridge:
+
+```bash
+adb install server-monitor.apk
+```
+
+For phone-only install, download the APK from GitHub, open it on the device, and allow installation from the browser or file manager when Android prompts.
 
 ---
 
@@ -63,6 +83,12 @@ Each check runs independently and reports its own result:
 | DNS / Domain | OkHttp DNS lookup | Resolves the hostname via system DNS |
 
 A server is considered **online** only when all enabled checks pass. Any single check failure marks the server offline.
+
+### Server List Ordering
+
+The dashboard keeps your saved server order as the normal list position. When an enabled server has completed at least one check and becomes offline, its card is promoted to the top so outages are immediately visible.
+
+If several servers are offline, the most recently checked offline server appears first. When a server recovers, it leaves the offline priority group and returns to its saved normal position.
 
 ### Notifications
 
